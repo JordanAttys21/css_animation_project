@@ -1,8 +1,32 @@
 div {
     width: 100px;
     height: 100px;
-    background-color: black;
+    background-color: #000000;
+    animation: moveInLoop 5s linear infinite;
+ 
 }
 
-/* Your code goes here: */
+@keyframes moveInLoop {
 
+    0% {
+        transform: translateX(0px) translateY(0px);
+
+    }
+
+    25% {
+        
+        transform: translateX(500px);
+    }
+
+    50% {
+        transform: translateY(300px);
+    }
+
+    75% {
+        transform: translateX(-500x);
+    }
+
+    100% {
+        transform: translateY(-20px);
+    }
+}

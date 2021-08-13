@@ -1,5 +1,47 @@
 img {
     width: 150px;
+    height: 150px;
+    animation: bounce 5s linear infinite 6s;
+    
+    
 }
 
-/* Your code here */
+body {
+    background-color: white;
+    animation: changeColor 6s;
+    overflow: hidden;
+    
+}
+
+@keyframes changeColor {
+    0% {
+        background-color: white;
+    }
+
+    50% {
+        background-color: black;
+    }
+
+    100% {
+        background-color: white;
+    }
+}
+
+@keyframes bounce {
+    33% {
+        transform: translate(calc(100vw - 150px), 200px)
+    }
+
+    66% {
+        transform: translate(50vw, calc(100vh - 200px))    
+    }
+
+    100% {
+        transform: translate(-10px, -10px)
+    }
+
+  }
+
+
+  
+ 

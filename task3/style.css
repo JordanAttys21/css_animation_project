@@ -1,5 +1,6 @@
 img {
-    width: 300px
+    width: 300px;
+    
 }
 
 #race {
@@ -7,4 +8,8 @@ img {
 }
 
 
-/* Your code goes here: */
+@keyframes Move {
+    100% {
+        transform: translateX(calc(100vw - 300px));
+    }
+}
